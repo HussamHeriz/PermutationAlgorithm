@@ -9,4 +9,5 @@ This algorithm implementation supports two encryption and decryption of permutat
 
 # Screenshots
 ![encrypt](https://raw.githubusercontent.com/HussamHeriz/PermutationAlgorithm/master/screenshots/encrypt.jpg)
+![inverse](https://raw.githubusercontent.com/HussamHeriz/PermutationAlgorithm/master/screenshots/inverse.jpg)
 ![decrypt](https://raw.githubusercontent.com/HussamHeriz/PermutationAlgorithm/master/screenshots/decrypt.jpg)
