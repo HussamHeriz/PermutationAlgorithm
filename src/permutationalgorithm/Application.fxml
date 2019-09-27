@@ -93,6 +93,35 @@
                   </AnchorPane>
                </content>
             </Tab>
+            <Tab text="Inverse Key Calculation">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="key_string3" layoutX="102.0" layoutY="95.0" prefHeight="34.0" prefWidth="462.0" promptText="eg: 4,2,3,1,5" />
+                        <Label layoutX="140.0" layoutY="34.0" text="Key Seperated By Comma">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="242.0" layoutY="167.0" text="Inverse Key">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="inverse_key3" editable="false" layoutX="136.0" layoutY="220.0" prefHeight="34.0" prefWidth="394.0" promptText="eg: 4,2,3,1,5">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="222.0" layoutY="296.0" mnemonicParsing="false" onAction="#calculate" prefHeight="53.0" prefWidth="202.0" text="Calculate">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
          </tabs>
       </TabPane>
    </children>

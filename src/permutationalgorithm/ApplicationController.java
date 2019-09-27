@@ -41,6 +41,12 @@ public class ApplicationController implements Initializable {
 
     @FXML
     private TextArea message2;
+    
+    @FXML
+    private TextField key_string3;
+    
+    @FXML
+    private TextField inverse_key3;
 
     
     @FXML
@@ -66,6 +72,18 @@ public class ApplicationController implements Initializable {
             message2.setText(message);   
         }catch(Exception e){
             message2.setText("ERROR! Please check your inputs");
+        }
+        
+    }
+    
+    @FXML
+    void calculate(ActionEvent event) {
+        try {
+            int[] key = stringToInt(key_string3.getText().split(","));
+            PermutationImplementation permutationAlg = new PermutationImplementation(key,'#');
+            inverse_key3.setText(permutationAlg.printInverseKey());   
+        }catch(Exception e){
+            inverse_key3.setText("ERROR! Please check your inputs");
         }
     }
     

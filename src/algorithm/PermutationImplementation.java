@@ -82,4 +82,17 @@ public class PermutationImplementation {
         return inverseKey;
     }
     
+    public String printInverseKey() {
+        String output = "";
+        
+        for(int i=0; i<inverseKey.length; i++)
+        {
+            output+=inverseKey[i];
+            if(i != inverseKey.length-1)
+                output+=",";
+        }
+        
+        return output;
+    }
+    
 }
